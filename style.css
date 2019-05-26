@@ -13,18 +13,18 @@ nav,
 section,
 aside,
 footer {
-    background:#ebebeb;
-}
-
-Article {
-    color:#ebebeb;
-    background:#777;
+    background-color:#ebebeb;
 }
 
 h1,
 p {
     color: #777;
-    background:#ebebeb;
+    background-color:#ebebeb;
+}
+
+Article {
+    color:#ebebeb;
+    background-color:#777;
 }
 
 section {
@@ -32,20 +32,28 @@ section {
 }
 
 /*added code*/
-h5{
-    font-size: 18px;
+
+.container{
+    display: table;
+    width: 100%;
+}
+
+.space{
+    width:2.5px;
+    background-color:#777;
 }
 
 aside {
-    float: right;
-    width: 435px;
-    margin:0 0 10px 10px; /*top right bottom left margin*/
-    padding-bottom: 296px;
+    /*float: right;*/
+    /*margin:0 0 10px 10px;*/ /*top right bottom left margin*/
+    /*padding-bottom: 296px;*/
+    display: table-cell;
 }
 
 section{
+    /*float: right;*/
     overflow: auto;
-    margin: 10px 0;
+    display: table-cell;
 }
 
 article{
@@ -76,7 +84,11 @@ nav {
 footer{
     padding: 10px 0;
     clear: both; /*no floating elements on left/ right side*/
-    margin: 20px 0 10px; /*top (right and left) bottom*/
+    margin: 20px 0; /*top (right and left) bottom*/
+}
+
+.bold{
+    font-weight: bold;
 }
 
 /*`float`, `padding`, `margin`, 
